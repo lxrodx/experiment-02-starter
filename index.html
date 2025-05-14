@@ -8,24 +8,46 @@
 </head>
 
 <body>
+    <button id="audioBtn"> Play Sound</button>
     <!-- this is your parent container for the tiles -->
     <div class="flex-container">
         <!-- put your content for tile 1 in here -->
-        <div class="flex-tile">
+        <div class="flex-tile tile1">
+            <img src="Kylo Ren.jpg" alt="Kylo Ren">
+            <h2>Kylo Ren </h2>
+            <p> descrption </p>
+            <a href="https://www.starwars.com/databank/kylo-ren" class="btn">Website</a>
+
             
 
         </div>
 
         <!-- put your content for tile 2 in here -->
-        <div class="flex-tile">
+        <div class="flex-tile tile2">
+            <img src="Spiderman.jpg" alt="Spiderman">
+            <h2> Spiderman </h2>
+            <p> description</p>
+            <a href="https://spiderman-films.fandom.com/wiki/Spider-Man_(Tobey_Maguire)" class="btn">Website</a>
 
         </div>
 
         <!-- put your content for tile 3 in here -->
-        <div class="flex-tile">
+        <div class="flex-tile tile3">
+            <img src="The Joker.jpg" alt="Joker">
+            <h2> The Joker </h2>
+            <p> description</p>
+            <a href="https://batman.fandom.com/wiki/The_Joker_(Nolanverse)" class="btn">Website</a>
             
         </div>
     </div>
+    <audio id="sound" src="cinematic-background-5-291977.mp3"></audio>
+    <script>
+        document.getElementById('audioBtn').onclick = () => {
+          document.getElementById('sound').play();
+        };
+      </script>
+    
+
 </body>
 </html>
 

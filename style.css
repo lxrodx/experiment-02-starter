@@ -1,30 +1,124 @@
 body {
     margin: 0;
     /* feel free to change/customize this gradient and font */
-    background: linear-gradient(135deg, #ffafbd 0%, #ffc3a0 100%);
+    background: linear-gradient(135deg, #4a4848 0%, #ffc3a0 100%);
     /* feel free to change/customize font */
     font-family: 'Arial', sans-serif;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .flex-container {
     /* Make this into a flexbox using display: flex */
     /* Use flexbox properties to stack your tiles vertically and center them */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  
 }
 
 .flex-tile {
     /* Make this into a flexbox using display: flex */
     /* Use flexbox properties to stack elements in your tiles vertically and center them */
-
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+  
+    
+  
     /* setting the width for each tile */
-    width: 40%;
+     width: 100%;
 
+     
     /* spacing tiles */
     margin: 5%;
     padding: 20px;
+    
 
     /* background color for tile, feel free to change */
+   
     background-color: white;
+    
 }
+/* Unique background colors */
+.tile1 {
+    background-color: rgb(120, 26, 26);
+  }
+  
+  .tile2 {
+    background-color: rgb(65, 65, 91);
+  }
+  
+  .tile3 {
+    background-color: rgb(79, 107, 79);
+  }
+  
+
+
+
+/* Tile hover animation */
+.flex-tile:hover {
+    background-color: #dcdcdc;
+  }
+  
+  /* Button styles and animations */
+  .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .btn:hover {
+    background-color: #4a4941;
+    transform: scale(1.05);
+  }
+  
+  .btn:active {
+    background-color: #000;
+    transform: rotate(10deg);
+  }
+
+  /* Keyframe animation for tile3 */
+@keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(-2deg); }
+    75% { transform: rotate(2deg); }
+  }
+  
+  .tile3:hover {
+    animation: wiggle 0.4s ease-in-out;
+  }
+  
+  /* Bonus audio button */
+  #audioBtn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #444;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  #audioBtn:hover {
+    background-color: #666;
+  }
+  
+
+  
+  
 
 
 
