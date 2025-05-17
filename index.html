@@ -8,15 +8,17 @@
 </head>
 
 <body>
-    <button id="audioBtn"> Play Sound</button>
+    <button class="audioBtn" onclick="document.getElementById('sound').play()">Play Sound</button>
+    <audio id="sound" src="cinematic-background-5-291977.mp3"></audio>
+    
     <!-- this is your parent container for the tiles -->
     <div class="flex-container">
         <!-- put your content for tile 1 in here -->
         <div class="flex-tile tile1">
-            <img src="Kylo Ren.jpg" alt="Kylo Ren">
+            <img class="Kyloren" src="Kylo Ren.jpg" alt="Kylo Ren">
             <h2>Kylo Ren </h2>
-            <p> descrption </p>
-            <a href="https://www.starwars.com/databank/kylo-ren" class="btn">Website</a>
+            <p> Born as Ben Solo, Kylo Ren is the central character in the Star Wars sequel trilogy. He turned over to the darkside in honor of his grandfather, Darth Vader. He is also the son of Leia Organa and Han solo.  </p>
+            <a href="https://www.starwars.com/databank/kylo-ren"> <button class="btn">Website </button > </a>
 
             
 
@@ -24,30 +26,23 @@
 
         <!-- put your content for tile 2 in here -->
         <div class="flex-tile tile2">
-            <img src="Spiderman.jpg" alt="Spiderman">
+            <img class="Spiderman" src="Spiderman.jpg" alt="Spiderman">
             <h2> Spiderman </h2>
-            <p> description</p>
-            <a href="https://spiderman-films.fandom.com/wiki/Spider-Man_(Tobey_Maguire)" class="btn">Website</a>
+            <p> After being bitten by a radioactive spider, Peter Parker gains powers such as web swinging, super strength, agility, and so much more. He faces many struggles and lives by the infamous saying, "With great power comes great responsibility."</p>
+            <a href="https://spiderman-films.fandom.com/wiki/Spider-Man_(Tobey_Maguire)"> <button class="btn">Website </button> </a>
 
         </div>
 
         <!-- put your content for tile 3 in here -->
         <div class="flex-tile tile3">
-            <img src="The Joker.jpg" alt="Joker">
+            <img class="Joker" src="The Joker.jpg" alt="Joker">
             <h2> The Joker </h2>
-            <p> description</p>
-            <a href="https://batman.fandom.com/wiki/The_Joker_(Nolanverse)" class="btn">Website</a>
+            <p> The Joker is an iconic supervillian in the DC universe. He is Batman's archenemy and is known for his chaotic nature, violence, and unpredictability.</p>
+            <a href="https://batman.fandom.com/wiki/The_Joker_(Nolanverse)"> <button class="btn">Website </button> </a>
             
         </div>
     </div>
-    <audio id="sound" src="cinematic-background-5-291977.mp3"></audio>
-    <script>
-        document.getElementById('audioBtn').onclick = () => {
-          document.getElementById('sound').play();
-        };
-      </script>
     
-
 </body>
 </html>
 

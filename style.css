@@ -18,6 +18,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    width: 50vh;
   
 }
 
@@ -56,31 +57,54 @@ body {
   .tile3 {
     background-color: rgb(79, 107, 79);
   }
+
+  .Kyloren {
+    max-width: 300px;
+    height: auto;
+
+  }
+
+  .Spiderman {
+    max-width: 300px;
+    height: auto;
+  }
   
+  .Joker {
+max-width: 300px;
+height: auto;
+  }
+  
+
 
 
 
 /* Tile hover animation */
 .flex-tile:hover {
-    background-color: #dcdcdc;
+    background-color:white;
+    cursor: pointer;
   }
   
   /* Button styles and animations */
   .btn {
     display: inline-block;
-    margin-top: 10px;
     padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
+    margin-top: 5%;
+    width: 100px;
+    border: 3px dotted black;
     border-radius: 5px;
+    background-color: #5a5858;
+    color: white;
     cursor: pointer;
     transition: transform 0.2s, background-color 0.2s;
+    text-decoration: none;
   }
   
   .btn:hover {
-    background-color: #4a4941;
-    transform: scale(1.05);
+    background-color: #a7a6a3;
+    color: blueviolet;
+    border: 3px solid blueviolet;
+    transform: scale(1.50);
+    cursor: pointer;
   }
   
   .btn:active {
@@ -88,7 +112,7 @@ body {
     transform: rotate(10deg);
   }
 
-  /* Keyframe animation for tile3 */
+  /* Keyframe animation for tiles */
 @keyframes wiggle {
     0%, 100% { transform: rotate(0deg); }
     25% { transform: rotate(2deg); }
@@ -96,24 +120,35 @@ body {
     75% { transform: rotate(2deg); }
   }
   
-  .tile3:hover {
+  .flex-tile:hover {
     animation: wiggle 0.4s ease-in-out;
   }
   
   /* Bonus audio button */
-  #audioBtn {
-    margin-top: 20px;
+  .audioBtn {
     padding: 10px 15px;
-    border: none;
-    background-color: #444;
-    color: white;
+    margin-top: 20px;
+    border: 3px dotted black;
     border-radius: 5px;
+    background-color: #454343;
+    color: white;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: transform 0.2s, background-color 0.2s;
+    text-decoration: none;
   }
   
-  #audioBtn:hover {
-    background-color: #666;
+  .audioBtn:hover {
+    background-color: #a7a6a3;
+    color: blueviolet;
+    border: 3px solid blueviolet;
+    transform: scale(1.50);
+    cursor: pointer;
+  }
+
+    .audioBtn:active {
+    background-color: #000;
+    transform: rotate(10deg);
+
   }
   
 
